@@ -17,3 +17,6 @@
 #Ignore all pdf files inside some Praktikum folders
 Praktikum-6/*.pdf
 Praktikum-7/*.pdf
+
+#Ignore all files named "coretan.txt"
+*coretan.txt
