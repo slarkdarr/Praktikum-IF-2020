@@ -1,0 +1,19 @@
+#Ignore all zip files
+*.zip
+
+#Ignore all image files
+*.png
+*.jpg
+*.jpeg
+
+#Ignore all PowerPoint files
+*.ppt
+*.pptx
+
+#Ignore .vscode folder
+*/.vscode/
+.vscode/
+
+#Ignore all pdf files inside some Praktikum folders
+Praktikum-6/*.pdf
+Praktikum-7/*.pdf

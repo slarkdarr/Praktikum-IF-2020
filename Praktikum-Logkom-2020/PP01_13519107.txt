@@ -1,0 +1,194 @@
+Bagian I
+
+a. Suami dari Nurbaya
+Query : suami(X,nurbaya).
+
+X = william ? 
+
+yes
+
+b. Paman dari Small Faris
+Query : keponakan(smallfaris,X).
+
+X = jovan ? a
+
+X = zunan
+
+X = william
+
+(15 ms) yes
+
+c. Menantu dari Yoga
+Query : mertua(yoga,X).
+
+X = siti ? 
+
+yes
+
+d. Nenek dari Small Faris
+Query : wanita(X),
+    cucu(faris,X).
+
+X = lisa ? a
+
+X = asin
+
+no
+
+e. Cucu dari Padil
+Query : cucu(X,padil).
+
+X = babythajeb ? 
+
+yes
+
+f. Ipar dari Siti
+Query : menikah(siti,Y),
+    saudara(X,Y).
+
+X = jovan
+Y = farras ? a
+
+X = zunan
+Y = farras
+
+(16 ms) no
+
+g. Sepupu dari Baby Thajeb
+Query : sepupu(babythajeb,X).
+
+X = smallfaris ? 
+
+yes
+
+h. Wanita yang merupakan anak tunggal
+Query : wanita(X),
+    anaksulung(X),
+    anakbungsu(X).
+
+X = nurbaya ? a
+
+X = nurbaya
+
+X = nurbaya
+
+X = nurbaya
+
+(15 ms) yes
+
+i. Pria yang belum menikah
+Query : pria(X),
+    \+menikah(X,_).
+
+X = jovan ? a
+
+X = zunan
+
+X = smallfaris
+
+X = babythajeb
+
+yes
+
+
+Bagian II
+
+1. faktorial(N,X)
+Query : faktorial(3,X).
+
+X = 6 ? 
+
+yes
+
+2. gcd(A,B,X).
+Query : gcd(8,20,X).
+
+X = 4
+
+yes
+
+3. power(A,B,X).
+Query : power(2,5,X).
+
+X = 32 ? 
+
+yes
+
+4. countDigit(A,X).
+Query : countDigit(13519000,X).
+
+X = 8 ? 
+
+yes
+
+5. createTriangle(X).
+Query : createTriangle(5).
+*****
+****
+***
+**
+*
+
+true ? 
+
+yes
+
+
+Bagian III
+
+1. Queue
+
+- Push
+Query : push(4, [1, 2, 3], Result).
+
+Result = [1,2,3,4] ? 
+
+yes
+
+- Pop
+Query : pop([1, 2, 3], Result).
+
+Result = [1,2] ? 
+
+(16 ms) yes
+
+- Front
+Query : front([1, 2, 3], Result).
+
+Result = 1 ? 
+
+yes
+
+- Back
+Query : back([1, 2, 3], Result).
+
+Result = 3 ? 
+
+yes
+
+2. concatenate(Flist,Slist,X,Y,Result)
+Query : concatenate([1, 2, 3], [4, 5, 6], 2, 2, Result).
+
+Result = [1,2,4,5] ? 
+
+yes
+
+3. palindrom(List)
+- Query : palindrom([1,2,3,2,1]).
+
+true ? 
+
+yes
+
+- Query : palindrom([]).
+
+yes
+
+- Query : palindrom([1,2,2,3,2,1]).
+
+no
+
+
+BONUS
+
+Jujur saya nyerah ngerjain bonus, yg di file .pl itu salah
